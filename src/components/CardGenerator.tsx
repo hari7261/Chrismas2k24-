@@ -37,7 +37,7 @@ const CardGenerator: React.FC = () => {
 
       <div
         ref={cardRef}
-        className="bg-[url('https://images.unsplash.com/photo-1512389142860-9c449e58a543?ixlib=rb-4.0.3')] bg-cover bg-center p-8 rounded-xl shadow-2xl min-h-[400px] flex flex-col justify-center items-center text-center"
+        className="bg-[url('https://images.unsplash.com/photo-1512922173841-4394b88335df?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center p-8 rounded-xl shadow-2xl min-h-[400px] flex flex-col justify-center items-center text-center"
       >
         <div className="bg-white/90 p-8 rounded-lg backdrop-blur-sm">
           <h3 className="text-3xl font-bold text-red-600 mb-4">Merry Christmas!</h3>
