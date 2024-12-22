@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { toPng } from 'html-to-image';
+import html2canvas from 'html2canvas';
 import { useSpring, animated } from '@react-spring/web';
 import { Download } from 'lucide-react';
 
@@ -14,7 +14,8 @@ const CardGenerator: React.FC = () => {
 
   const downloadCard = async () => {
     if (cardRef.current) {
-      const dataUrl = await toPng(cardRef.current);
+      const canvas = await html2canvas(cardRef.current);
+      const dataUrl = canvas.toDataURL('image/png');
       const link = document.createElement('a');
       link.download = `christmas-card-${name}.png`;
       link.href = dataUrl;
